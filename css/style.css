@@ -15,3 +15,37 @@
 #myContainer{
 	background-color: #eff;
 }
+
+.level {
+	height: 600px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.level-left, .level-right {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+}
+
+.level-left {
+	background: #3a4447;
+}
+
+.level-right {
+	background: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+	.level {
+		flex-direction: column;
+	}
+	.level-left, .level-right {
+		width: 100%;
+	}
+}
