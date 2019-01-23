@@ -53,6 +53,7 @@ p {
     align-items: center;
     overflow: hidden;
     height: 500px;
-    background: red;
+    background: #34495e;
+    color:#fff;
 }
 }
