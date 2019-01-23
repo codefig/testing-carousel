@@ -1,46 +1,51 @@
-#imageContainer{
-	background-color:#18FFFF;
-	/*height:600px;*/
-}
 
-#navbarContainer{
-	background-color: #E3008C;
+
+ 
+#elementHeader {
+	text-align: center;
 }
 
 #elementContainer{
-	height:600px;
-	background-color:red;
+	/*height:600px;*/
+	/*background-color:red;*/
 }
 
 #myContainer{
 	background-color: #eff;
+	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 .level {
 	height: 600px;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	/*align-items: center;*/
+	border-radius: 7px;
+}
+.level-left{
+	width:65%;
+	background: #3498db;
+}
+.level-right{
+	width:30%;
+	background: #e67e22;
 }
 
 .level-left, .level-right {
-	width: 50%;
+	
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
 	font-size: 36px;
+	border-radius: 7px;
 }
 
-.level-left {
-	background: #3a4447;
+.column{
+	background-color:red;
 }
-
-.level-right {
-	background: #fff;
-}
-
 @media only screen and (max-width: 991px) {
 	.level {
 		flex-direction: column;
