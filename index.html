@@ -49,10 +49,18 @@
 				</div>
     			<div class="col-md-4">
     				<div class="navigation">
-                        <p data-target="#images_carousel" data-slide-to="0" data-match="0" class="active-p">01. This text is related to Image 1</p>
-                        <p data-target="#images_carousel" data-slide-to="1" data-match="1">02. This text is related to Image 2</p>
-                        <p data-target="#images_carousel" data-slide-to="2" data-match="2">03. This text is related to Image 3</p>
-                        <p data-target="#images_carousel" data-slide-to="3" data-match="3">04. This text is related to Image 4</p>
+                        <div class="navbar-element" data-target="#images_carousel" data-slide-to="0" class="active-div">01. This text is related to Image 1
+                            <p class="subtext">This is the subtext for Image 1</p>
+                        </div>
+                        <div class="navbar-element" data-target="#images_carousel" data-slide-to="1" >02. This is for Image 2 
+                        <p class="subtext"> This is subtext for iamge 2 </p>
+                        </div>
+                        <div class="navbar-element" data-target="#images_carousel" data-slide-to="2" >03. This text is related to Image 3
+                         <p class="subtext"> This is subtext for iamge 3 </p>
+                        </div>
+                        <div class="navbar-element" data-target="#images_carousel" data-slide-to="3">04. This text is related to Image 4
+                            <p class="subtext">This is the subtext for image 4 </p>
+                        </div>
                     </div>
     			</div>
     		</div>
@@ -61,5 +69,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </body>
+<script>
+    
+   $('document').ready(function(){
 
+        $('.navbar-element').click(function(){
+            $('.subtext').css('visibility', 'hidden');
+            $(this).children( ".subtext" ).css( "visibility", "visible" );
+        })
+   })
+</script>
 </html>
